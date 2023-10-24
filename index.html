@@ -43,6 +43,12 @@
       text-align: right;
     }
 
+    @media print {
+      .noprint {
+        display: none
+      }
+    }
+
     @media (prefers-color-scheme: dark) {
       .theme-toggle .dark {
         display: none
@@ -81,7 +87,7 @@
 
 <body>
   <header>
-    <nav class="container">
+    <nav class="container noprint">
       <ul>
         <li><strong>Resume</strong></li>
       </ul>
